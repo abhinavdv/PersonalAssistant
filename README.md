@@ -1,5 +1,5 @@
 # PersonalAssistant
-A personal assistant to help me recollect things, remember events, summarize various events- small and big.
+A personal assistant to help me recollect things, remember and summarize various events- small and big.
 
 
 As a user I want to be able to:
