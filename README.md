@@ -1,4 +1,4 @@
-#Building a personal assistant
+#Building a personal assistant 
 ##A RAG based AI assistant
 ###Introduction
 I've always dreamt of having a second brain—an ever-present companion that seamlessly supports my every need making me more productive. The idea of having someone (or in this case, something) that always has your back is undeniably fascinating. But aren’t personal assistants just for top-level professionals, business owners, or even superheroes? Why should they have all the fun? That's exactly why I decided to create Jarvis, my very own AI-powered personal assistant, bringing the dream of a second brain to life for me and you.
