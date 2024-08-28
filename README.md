@@ -75,9 +75,9 @@ Disadvantages:
 Significant time investment into writing down use cases.
 For every new use case we might think of, we need to create a new pipeline.
 As models get more powerful, this becomes less of an issue.
-### Final Decision
+#### Final Decision
 I decided to go on with the agentic approach since it was more promising. I will use langChain for this project. I am sure as the models get better, the framework will get better and the accuracy will improve as well. The major reason I did not go ahead with the systematic design approach is because I would have to list all possible scenarios I want my AI to work on and there is no scope for innovation there.
-Architecture of the AI agent
+### Architecture of the AI agent
 Below is a swimlane diagram of the basic architecture we are going to build:
 
 I want to create this in a modular way so that in future if anyone wants to add an agent(horizontal scaling), they can just add new actions and plug into the architecture. This is how the flow is going to be. The prompt is fed to the AI Orchestrator which parses the prompt, understands it and creates a plan of action. It creates a list of actions that need to be taken to accomplish the task. This includes a list of agents it must call and the order in which it must call them. Further, it also decides how it is going to use the output from one agent and how it needs to be fed to the next agent. This method of breaking the task into smaller tasks is called chain-of-thought prompting and it helps the AI understand the task better. I will also provide a few examples of how this can be done in the prompt message. In future, I plan to leverage Prompt caching to save these examples in the cache. Once the LLM gives the output, it is parsed to give short answers as responses. In future, I will also add two text to speech models to enable multimodal operations.
